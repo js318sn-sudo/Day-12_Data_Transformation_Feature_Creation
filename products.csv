@@ -1,0 +1,11 @@
+ProductID,ProductName,Category,Price
+101,Laptop,Electronics,800
+102,Phone,Electronics,500
+103,Headphones,Electronics,100
+104,Chair,Furniture,150
+105,Table,Furniture,300
+106,Desk,Furniture,250
+107,Monitor,Electronics,250
+108,Keyboard,Electronics,50
+109,Mouse,Electronics,30
+110,Bookshelf,Furniture,200
