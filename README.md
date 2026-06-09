@@ -1,35 +1,36 @@
-Data Transformation and Feature Creation
+DATA TRANSFORMATION AND FEATURE CREATION
 
-Project Overview
+PROJECT OVERVIEW
 
-This project demonstrates data transformation and feature creation using Python. A structured sales dataset is used to generate meaningful business insights using Pandas operations.
+This project demonstrates data transformation and feature engineering using Python. A structured sales dataset is used to convert raw data into meaningful analytical insights using Pandas.
 
-The main goal is to convert raw data into useful analytical information by creating new features and performing analysis.
+The objective is to clean, transform, and analyze data to support business decision-making.
 
-Objectives
+OBJECTIVES
 
 - Load and explore dataset
-- Perform data transformation
-- Create new features from existing data
-- Apply Pandas functions like map, apply, applymap
-- Generate simple business insights
+- Perform data transformation and validation
+- Create new derived features
+- Apply Pandas functions including map, apply, applymap, and groupby
+- Perform structured data analysis
+- Generate business insights
 
-Dataset Description
+DATASET DESCRIPTION
 
-The dataset contains sales transaction details:
+The dataset contains the following fields:
 
-- OrderID
-- CustomerName
-- Product
-- Category
-- Quantity
-- Price
-- Discount
-- Region
+- OrderID: Unique identifier for each transaction
+- CustomerName: Name of the customer
+- Product: Product purchased
+- Category: Product category
+- Quantity: Number of units purchased
+- Price: Price per unit
+- Discount: Discount applied
+- Region: Sales region
 
-Feature Creation
+FEATURE ENGINEERING
 
-New columns created from existing data:
+The following features were created:
 
 - TotalSales = Quantity * Price
 - DiscountAmount = TotalSales * Discount
@@ -38,35 +39,47 @@ New columns created from existing data:
 - RegionCode created using map function
 - RevenueCategory created using apply function
 
-Techniques Used
+TECHNIQUES USED
 
-- map function for encoding values
-- apply function for conditional logic
-- applymap concept for element wise operations
-- groupby for grouped analysis
+Pandas Operations:
+- map() for categorical encoding
+- apply() for conditional feature creation
+- applymap() for element-wise transformation
+- groupby() for aggregation and analysis
 
-Analysis Performed
+ANALYSIS PERFORMED
 
-- Category wise sales analysis
-- Region wise sales analysis
-- Product performance analysis
-- Revenue category distribution
+- Category-wise sales analysis
+- Region-wise sales analysis
+- Product-wise performance analysis
+- Revenue category distribution analysis
 
-Tools Used
+VISUALIZATION
+
+- Bar chart representation using Matplotlib for category-wise sales
+
+TOOLS AND TECHNOLOGIES
 
 - Python
 - Pandas
 - Matplotlib
 - Jupyter Notebook
 
-Project Structure
+PROJECT STRUCTURE
 
-Day-12_Data_Transformation_Feature_Creation/
+Day-12_Data_Transformation_and_Feature_Creation/
 
-├── Transformation.ipynb
+├── Data_Transformation_&_Feature_Creation.ipynb
 ├── sales_data_large.csv
 └── README.md
 
-Conclusion
+KEY INSIGHTS
 
-This project demonstrates how raw sales data can be transformed into meaningful insights using feature creation and data analysis techniques in Python.
+- Electronics category generates higher revenue compared to furniture
+- Regional distribution impacts total sales performance
+- Discounts significantly affect final revenue values
+- Revenue categorization helps in business segmentation
+
+CONCLUSION
+
+This project demonstrates a complete workflow of data transformation and feature engineering. It shows how raw transactional data can be converted into structured insights using Python and Pandas.
