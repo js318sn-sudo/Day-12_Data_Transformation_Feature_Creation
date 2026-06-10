@@ -28,7 +28,7 @@ The dataset contains the following fields:
 - Discount: Discount applied
 - Region: Sales region
 
-FEATURE ENGINEERING
+FEATURE CREATION
 
 The following features were created:
 
@@ -38,6 +38,18 @@ The following features were created:
 - Profit = FinalAmount * 0.20
 - RegionCode created using map function
 - RevenueCategory created using apply function
+
+## Language Used
+
+Python
+
+## Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+- CSV Files
 
 TECHNIQUES USED
 
